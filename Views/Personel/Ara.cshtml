@@ -1,0 +1,22 @@
+﻿@model Personel
+
+@{
+	if (Model != null)
+	{
+		<h1>Personel Bilgileri</h1>
+		<p>
+			<b>Ad: </b> @Model.Ad
+		</p>
+		<p>
+			<b>Soyad: </b> @Model.Soyad
+		</p>
+		<p>
+			<b>Departman: </b> @Model.Departman
+		</p>
+	}
+	else
+	{
+		<h1>Personel Bulunamadı</h1>
+		<p style="color: red;">Aradığınız personel bulunamadı.</p>
+	}
+}

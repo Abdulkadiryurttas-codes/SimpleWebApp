@@ -1,0 +1,34 @@
+﻿@model List<Personel>
+
+<table>
+	<tr>
+		<td>
+			<b>Ad</b>
+		</td>
+		<td>
+			<b>Soyad</b>
+		</td>
+		<td	>
+			<b>Departman</b>
+		</td>
+	</tr>
+
+	@{
+
+		foreach(var p in Model)
+		{
+			<tr>
+				<td>
+					@p.Ad
+				</td>
+				<td>
+					@p.Soyad
+				</td>
+				<td>
+					@p.Departman
+				</td>
+			</tr>
+		}
+
+	}
+</table>
